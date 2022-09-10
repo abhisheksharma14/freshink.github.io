@@ -1,5 +1,5 @@
 # Site
-title:              FreshInk
+title:              FreshiNk
 bio:                'We DESIGN Your DREAMS'
 description:        "Get your personalised prints with the best quality in the town. Handled with love and care"
 reading_time:       true
@@ -8,8 +8,8 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-#url:                http://freshink.in
-url:                http://localhost:4000
+url:                http://freshink.in
+#url:                http://localhost:4000
 
 # Jekyll
 permalink:          /:title/
