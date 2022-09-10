@@ -21,8 +21,18 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
-                <div class="post-list">
-                    {% for post in site.posts %} 
+                <!-- SnapWidget -->
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <!-- SnapWidget -->
+                <iframe
+                        src="https://snapwidget.com/embed/1009911"
+                        class="snapwidget-widget"
+                        allowtransparency="true"
+                        frameborder="0"
+                        scrolling="no"
+                        style="border:none; overflow:hidden;  width:100%; height: auto"></iframe>
+                <!--<div class="post-list">
+                    {% for post in site.posts %}
                         {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
@@ -33,7 +43,7 @@ layout: compress
                     </ul>
                         {% endif %}
                     {% endfor %}
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
