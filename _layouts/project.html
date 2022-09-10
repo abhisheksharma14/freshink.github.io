@@ -22,17 +22,27 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
-                        {% if post.project %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            <a class="zoombtn" href="#">Mugs</a>
+                            {% include static_gallery.html folder="/assets/work/mugs" %}
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="#">Logos</a>
+                            {% include static_gallery.html folder="/assets/work/logos" %}
                         </li>
                     </ul>
-                      {% endif %}
-                    {% endfor %}
+<!--                    {% for post in site.posts %} -->
+<!--                        {% if post.project %}-->
+<!--                    <ul>-->
+<!--                        <li class="wow fadeInLeft" data-wow-duration="1.5s">-->
+<!--                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>-->
+<!--                            <p>{{ post.excerpt }}</p>-->
+<!--                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                      {% endif %}-->
+<!--                    {% endfor %}-->
                 </div>
             </div>
         </div>
