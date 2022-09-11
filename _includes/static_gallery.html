@@ -11,7 +11,6 @@
     .image-gallery li {
         display: inline-block;
         margin: 0 0 1% 1%;
-        width: 19%;
         vertical-align: top;
     }
 
@@ -30,7 +29,8 @@
     }
 
     .image-gallery li a img {
-        width: 100%;
+        width: auto;
+        height: 200px;
         display: block;
     }
 </style>
@@ -40,6 +40,6 @@
     filenameparts = file.path | split: "/" %}{% assign filename = filenameparts | last | replace: file.extname,"" %}
     <li><a href="{{ file.path | relative_url }}" title="{{ filename }}"><img
             src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&h=300&output=jpg&q=50&t=square"
-            alt="{{ filename }}" title="{{ filename }}"/><span>{{ filename }}</span></a></li>
+            alt="{{ filename }}" title="{{ filename }}"/></a></li>
     {% endif %}{% endif %}{% endfor %}
 </ul>
