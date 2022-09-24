@@ -75,6 +75,8 @@ body {
 .container {
 	width: 36rem;
 	max-width: 550px;
+	margin-top: 55px;
+	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
@@ -93,7 +95,6 @@ body {
 	}
 }
 .row {
-	margin-top: 15px;
 	text-align: center;
 	.title {
 	    margin-top: 0;
